@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 先看看 FAQ / 安装指南
+    url: https://github.com/kanekanefy/mytv-for-mac#faq
+    about: 大多数"打不开""无法验证开发者""翻译用不了"问题这里已有答案
+  - name: 怎么反馈问题 / 求助
+    url: https://github.com/kanekanefy/mytv-for-mac/blob/main/SUPPORT.md
+    about: 提 Issue 前先看这个，能更快定位问题

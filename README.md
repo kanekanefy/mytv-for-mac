@@ -12,6 +12,8 @@
 [![license](https://img.shields.io/badge/license-source%20not%20included-lightgrey)](#说明)
 [![download](https://img.shields.io/github/v/release/kanekanefy/mytv-for-mac?label=%E4%B8%8B%E8%BD%BD&color=2ea44f)](https://github.com/kanekanefy/mytv-for-mac/releases/latest)
 
+**简体中文** ｜ [English](README.en.md)
+
 [功能](#功能) · [截图](#截图) · [安装](#安装) · [首次配置](#首次配置订阅源) · [FAQ](#faq) · [隐私](#隐私) · [路线图](#路线图)
 
 </div>
@@ -21,6 +23,8 @@
 ## 说明
 
 这是一个私人项目的**发布仓库**：只放安装包、文档和截图，**不包含源代码**。如果你是被作者直接分享这个仓库链接的朋友，跳到 [安装](#安装) 就够了。
+
+不接受代码 Pull Request（本仓库没有 App 源码，无法合并）；文档/翻译措辞的小修正 PR 欢迎，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。遇到问题看 [SUPPORT.md](SUPPORT.md)，安全问题看 [SECURITY.md](SECURITY.md)。
 
 ## 功能
 
@@ -77,6 +81,8 @@
      ```
 4. 之后正常双击打开就行，只有第一次需要这么做
 
+更详细的分步说明（含常见报错排查表）见 [docs/installation.md](docs/installation.md)。
+
 ## 首次配置订阅源
 
 App 内置了一个公共 IPTV 源（500+ 频道），**第一次打开就能直接看**，不需要任何配置。
@@ -98,7 +104,7 @@ App 内置了一个公共 IPTV 源（500+ 频道），**第一次打开就能直
 见上面「安装」第 3 步，右键打开或去系统设置里放行一次就行，这是正常现象（个人开发者没有花钱买 Apple 的公证服务）。
 
 **翻译功能用不了 / 提示找不到 llama-server？**
-App 已经把本地推理运行时打包在里面了，正常情况不需要额外安装任何东西。如果确实报错，请反馈问题时附上「设置 → 调试」页面的日志路径内容。
+App 已经把本地推理运行时打包在里面了，正常情况不需要额外安装任何东西。如果确实报错，请反馈问题时附上「设置 → 调试」页面的日志路径内容（默认在 `~/Library/Logs/MyTV/`）。
 
 **会不会偷偷联网上传我的数据？**
 不会。翻译识别、断句、模型推理全部在本机跑；唯一联网的地方是拉取你自己配置的 IPTV/EPG 地址，以及首次下载翻译模型。见下面「隐私」。
@@ -130,31 +136,6 @@ SwiftUI + AppKit（macOS 原生 UI）· libmpv（播放内核，VideoToolbox 硬
 
 ---
 
-## English
-
-<details>
-<summary>Click to expand English summary</summary>
-
-**我的电视 (MyTV for Mac)** is a native macOS IPTV player with on-device AI live-translation subtitles — a from-scratch SwiftUI + libmpv rewrite inspired by the Android project [yaoxieyoulei/mytv-android](https://github.com/yaoxieyoulei/mytv-android) (MIT), not a port of its code.
-
-**Highlights:** m3u/m3u8/txt playlist support with multi-line merging, EPG, hardware-accelerated playback (VideoToolbox) with automatic 1080i deinterlacing, channel logos, and a fully local real-time translation pipeline — foreign-language speech → Chinese subtitles, using the system SpeechAnalyzer for ASR and an on-device GGUF LLM (via a bundled llama-server runtime, Metal-accelerated) for translation. No audio or subtitle text ever leaves your Mac. A bilingual/side-by-side subtitle mode and an A/B model comparison mode are also included.
-
-**Requirements:** macOS 26+, Apple Silicon only (no Intel support).
-
-**Install:** download the `.dmg` from [Releases](../../releases), drag the app into Applications. Since this build isn't notarized with a paid Apple Developer ID, the first launch will be blocked by Gatekeeper — right-click the app and choose "Open" (then confirm in the dialog that appears), or allow it once in System Settings → Privacy & Security, or run `xattr -dr com.apple.quarantine "/Applications/我的电视.app"` in Terminal.
-
-**First run:** the app ships with a public IPTV playlist preset (500+ channels) enabled by default, so it's watchable immediately with zero configuration. Bring your own playlist URL in Settings → Sources if you have one.
-
-**Translation model:** the first time you turn on live subtitles (⌘/menu → Translation, or press `Y`), the app prompts you to download a local GGUF model (~1.5GB and up) from its built-in model library — this is a one-time download, not a cloud API call, and inference happens entirely on-device afterwards.
-
-**Privacy:** speech recognition and translation run 100% locally (system SpeechAnalyzer + a local llama-server subprocess with Metal acceleration). No telemetry is sent to the author. The only network access is fetching whichever IPTV/EPG URL you configure, and the one-time model download.
-
-This is a distribution-only repository for a personal project — source code is not included, and pull requests are not accepted. Use [Issues](../../issues) for bug reports.
-
-</details>
-
----
-
 <div align="center">
-<sub>问题反馈：<a href="../../issues">Issues</a>　·　这是私人项目的分发仓库，不接受 PR</sub>
+<sub>问题反馈：<a href="../../issues">Issues</a>（求助前先看 <a href="SUPPORT.md">SUPPORT.md</a>）　·　安全问题：<a href="SECURITY.md">SECURITY.md</a>　·　这是私人项目的分发仓库，不接受代码 PR，详见 <a href="CONTRIBUTING.md">CONTRIBUTING.md</a></sub>
 </div>

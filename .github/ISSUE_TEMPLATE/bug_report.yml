@@ -1,0 +1,101 @@
+name: "🐛 Bug 反馈"
+description: 报个问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前建议先看一下 [FAQ](../../README.md#faq) 和 [SUPPORT.md](../../SUPPORT.md)，很多常见问题（打不开、翻译用不了等）那里已经有答案。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 简单说说遇到了什么问题。
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现步骤
+      description: 尽量具体，方便复现。
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: 预期行为 vs 实际行为
+    validations:
+      required: false
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS 版本
+      placeholder: 例如 macOS 26.1
+    validations:
+      required: true
+
+  - type: input
+    id: chip
+    attributes:
+      label: Mac 芯片型号
+      placeholder: 例如 M2 Pro / M4
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App 版本
+      description: 菜单栏「我的电视」→「关于」可看
+      placeholder: 例如 1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: channel-source
+    attributes:
+      label: 用的是哪种订阅源
+      options:
+        - 内置公共源（默认，未修改）
+        - 自己添加的自定义订阅源
+        - 两者都用过，问题都出现
+        - 不确定
+    validations:
+      required: false
+
+  - type: dropdown
+    id: translation-enabled
+    attributes:
+      label: 是否开启了实时翻译字幕
+      options:
+        - "是，问题就出在翻译功能上"
+        - "是，但问题跟翻译无关"
+        - "否，没开翻译"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志（翻译功能相关的问题请附上）
+      description: 设置 →「调试」页面能看到日志文件路径，默认在 `~/Library/Logs/MyTV/`。粘贴相关片段即可，注意去掉个人隐私信息（订阅源地址等）。
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图/录屏
+      description: 如果方便的话，直接把图片拖进这个输入框即可。
+    validations:
+      required: false

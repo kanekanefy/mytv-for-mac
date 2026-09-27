@@ -1,0 +1,25 @@
+name: "💡 功能建议"
+description: 想要个新功能，或者觉得哪里可以改进
+title: "[建议] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 想要什么
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么想要（什么场景下会用到）
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: 其他想法
+    validations:
+      required: false
