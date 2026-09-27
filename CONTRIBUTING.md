@@ -8,7 +8,7 @@
 
 - **Bug 反馈 / 功能建议**：用 [Issues](../../issues) 里的对应表单
 - **文档类 PR**：README、`docs/` 下的说明文字、翻译措辞如果有笔误、断链、表达不通顺的地方，欢迎直接提 PR 修正（这些文件本身就在本仓库里，可以正常合并）
-- **翻译校对**：如果你懂英文/其他语言，发现 `README.en.md` 等翻译文件哪里读起来不够地道，也欢迎提 PR 或在 Issue 里指出
+- **翻译校对**：如果你懂英文/日文/其他语言，发现 `README.en.md`、`README.ja.md` 等翻译文件哪里读起来不够地道，也欢迎提 PR 或在 Issue 里指出（目前已有英文、日文两个翻译版本）
 
 ## 提文档 PR 前
 
@@ -32,7 +32,7 @@ MyTV for Mac's source is private; this repository only publishes compiled instal
 
 - **Bug reports / feature requests**: use the relevant form under [Issues](../../issues)
 - **Documentation PRs**: typos, broken links, or unclear wording in the README or anything under `docs/` — feel free to send a PR directly, since these files do live in this repo and can be merged normally
-- **Translation proofreading**: if something in `README.en.md` (or any other translated file) reads awkwardly, a PR or an Issue pointing it out is welcome
+- **Translation proofreading**: if something in `README.en.md`, `README.ja.md`, or any other translated file reads awkwardly, a PR or an Issue pointing it out is welcome (English and Japanese translations are currently available)
 
 ## Before opening a documentation PR
 

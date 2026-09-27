@@ -9,10 +9,10 @@
 [![platform](https://img.shields.io/badge/platform-macOS%2026%2B-000000?logo=apple&logoColor=white)](#系统要求)
 [![arch](https://img.shields.io/badge/architecture-Apple%20Silicon-orange)](#系统要求)
 [![swift](https://img.shields.io/badge/Swift-SwiftUI%20%2B%20libmpv-F05138?logo=swift&logoColor=white)](#技术栈)
-[![license](https://img.shields.io/badge/license-source%20not%20included-lightgrey)](#说明)
+[![license](https://img.shields.io/badge/license-personal%20use-blue)](LICENSE)
 [![download](https://img.shields.io/github/v/release/kanekanefy/mytv-for-mac?label=%E4%B8%8B%E8%BD%BD&color=2ea44f)](https://github.com/kanekanefy/mytv-for-mac/releases/latest)
 
-**简体中文** ｜ [English](README.en.md)
+**简体中文** ｜ [English](README.en.md) ｜ [日本語](README.ja.md)
 
 [功能](#功能) · [截图](#截图) · [安装](#安装) · [首次配置](#首次配置订阅源) · [FAQ](#faq) · [隐私](#隐私) · [路线图](#路线图)
 

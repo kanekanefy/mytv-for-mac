@@ -9,10 +9,10 @@
 [![platform](https://img.shields.io/badge/platform-macOS%2026%2B-000000?logo=apple&logoColor=white)](#requirements)
 [![arch](https://img.shields.io/badge/architecture-Apple%20Silicon-orange)](#requirements)
 [![swift](https://img.shields.io/badge/Swift-SwiftUI%20%2B%20libmpv-F05138?logo=swift&logoColor=white)](#tech-stack)
-[![license](https://img.shields.io/badge/license-source%20not%20included-lightgrey)](#about-this-repo)
+[![license](https://img.shields.io/badge/license-personal%20use-blue)](LICENSE)
 [![download](https://img.shields.io/github/v/release/kanekanefy/mytv-for-mac?label=download&color=2ea44f)](https://github.com/kanekanefy/mytv-for-mac/releases/latest)
 
-[简体中文](README.md) ｜ **English**
+[简体中文](README.md) ｜ **English** ｜ [日本語](README.ja.md)
 
 [Features](#features) · [Screenshots](#screenshots) · [Install](#install) · [Getting started](#getting-started-add-a-playlist) · [FAQ](#faq) · [Privacy](#privacy) · [Roadmap](#roadmap)
 
