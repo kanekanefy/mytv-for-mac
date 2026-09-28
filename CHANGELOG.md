@@ -6,6 +6,22 @@
 
 暂无。
 
+## [1.0.1] - 2026-09-29
+
+### Fixed
+
+- 修复添加某些订阅源后 App 一启动就闪退：同一分组里有名字相近、会被识别为同一台的频道时，合并逻辑越界
+- 修复实时翻译的长句被截断成「…」：一次识别到多句话时，超长译文现在会拆成几条字幕依次显示，每条最多两行
+- 同一个附加订阅源被重复添加时自动去重
+
+### Changed
+
+- 字幕字号改为按视频画面高度等比缩放，去掉原来 40pt 的上限：窗口小字就小，全屏或外接大屏时字会跟着变大
+
+### Added
+
+- 翻译设置里新增「字幕大小」：小 / 标准 / 大 / 特大，远距离看电视时可以选大一档
+
 ## [1.0.0] - 2026-09-27
 
 首个对外分享版本。
@@ -24,5 +40,6 @@
 - 翻译模型不随包分发，首次使用在 App 内下载
 - ad-hoc 签名（无 Apple Developer ID 公证），首次打开需要手动放行一次，见 README「安装」
 
-[未发布]: https://github.com/kanekanefy/mytv-for-mac/compare/v1.0.0...HEAD
+[未发布]: https://github.com/kanekanefy/mytv-for-mac/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/kanekanefy/mytv-for-mac/releases/tag/v1.0.1
 [1.0.0]: https://github.com/kanekanefy/mytv-for-mac/releases/tag/v1.0.0
